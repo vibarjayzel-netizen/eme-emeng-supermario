@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Mini-Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="score-board">
+            Coins: <span id="coin-count">0</span> | Lives: <span id="lives-count">3</span>
+        </div>
+        
+        <div class="game-window" id="game-window">
+            <!-- Mario (Player) -->
+            <div id="player"></div>
+
+            <!-- The Flag / Goal -->
+            <div class="flag" style="left: 1150px; bottom: 40px;">🚩</div>
+
+            <!-- Platforms -->
+            <div class="platform" style="left: 0px; bottom: 0px; width: 1300px; height: 40px; background: #c84c0c;"></div> <!-- Ground -->
+            <div class="platform" style="left: 200px; bottom: 120px; width: 120px; height: 30px;"></div>
+            <div class="platform" style="left: 400px; bottom: 180px; width: 150px; height: 30px;"></div>
+            <div class="platform" style="left: 650px; bottom: 120px; width: 100px; height: 30px;"></div>
+            <div class="platform" style="left: 850px; bottom: 200px; width: 150px; height: 30px;"></div>
+
+            <!-- Coins -->
+            <div class="coin" style="left: 250px; bottom: 160px;">🪙</div>
+            <div class="coin" style="left: 470px; bottom: 220px;">🪙</div>
+            <div class="coin" style="left: 700px; bottom: 160px;">🪙</div>
+            <div class="coin" style="left: 900px; bottom: 240px;">🪙</div>
+
+            <!-- Enemies (Goombas) -->
+            <div class="enemy" id="enemy1" style="left: 450px; bottom: 40px;">🟫</div>
+            <div class="enemy" id="enemy2" style="left: 880px; bottom: 40px;">🟫</div>
+        </div>
+        
+        <div class="controls-hint">
+            Use <strong>Left / Right Arrow Keys</strong> to Move. Press <strong>Spacebar</strong> or <strong>Up Arrow</strong> to Jump.
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
