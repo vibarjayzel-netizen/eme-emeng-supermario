@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.score-board {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.game-window {
+    width: 800px;
+    height: 400px;
+    background: #5c94fc; /* Mario Sky Blue */
+    position: relative;
+    overflow: hidden;
+    border: 4px solid white;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#player {
+    width: 30px;
+    height: 38px;
+    background: #e45c10; /* Mario Red */
+    border: 3px solid #b83400;
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+.platform {
+    position: absolute;
+    background: #fc9838; /* Mario Brick Orange */
+    border: 2px solid #a84400;
+}
+
+.coin {
+    position: absolute;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enemy {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    position: absolute;
+    font-size: 35px;
+}
+
+.controls-hint {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
